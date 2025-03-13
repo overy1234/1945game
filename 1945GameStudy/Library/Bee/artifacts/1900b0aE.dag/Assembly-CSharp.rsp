@@ -425,9 +425,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Script/BackGround.cs"
+"Assets/Script/Homing.cs"
 "Assets/Script/Item.cs"
+"Assets/Script/MBullet.cs"
 "Assets/Script/Monster.cs"
+"Assets/Script/PBullet.cs"
 "Assets/Script/Player.cs"
+"Assets/Script/Spawn.cs"
 -langversion:9.0
 /deterministic
 /optimize+
