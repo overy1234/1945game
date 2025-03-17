@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
 
 
     //레이져
-
+    public GameObject lazer;
+    public float gValue = 0;
 
     void Start()
     {
@@ -60,6 +61,30 @@ public class Player : MonoBehaviour
             //프리팹 위치 방향 넣고 생성
             Instantiate(bullet[power], pos.position, Quaternion.identity);
         }
+        else if(Input.GetKey(KeyCode.Space))
+        {
+            gValue += Time.deltaTime;
+
+
+            if(gValue >=1)
+            {
+                GameObject go = Instantiate(lazer, pos.position, Quaternion.identity);
+                Destroy(go, 3);
+                gValue = 0;
+            }
+        }
+        else
+        {
+            gValue -= Time.deltaTime;
+
+            if(gValue <=0)
+            {
+                gValue = 0;
+            }
+
+
+        }
+
 
 
 

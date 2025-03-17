@@ -430,6 +430,7 @@
 "Assets/Script/BossHead.cs"
 "Assets/Script/Homing.cs"
 "Assets/Script/Item.cs"
+"Assets/Script/Lazer.cs"
 "Assets/Script/MBullet.cs"
 "Assets/Script/Monster.cs"
 "Assets/Script/PBullet.cs"
