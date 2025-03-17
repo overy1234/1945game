@@ -21,6 +21,7 @@ public class PBullet : MonoBehaviour
     {
         //자기 자신 지우기
         Destroy(gameObject);
+       
     }
 
 
@@ -40,7 +41,7 @@ public class PBullet : MonoBehaviour
 
             //몬스터삭제
             collision.gameObject.GetComponent<Monster>().Damage(Attack);
-
+           //PoolManager.Instance.Return(collision.gameObject);
             //미사일 삭제
             Destroy(gameObject);
 

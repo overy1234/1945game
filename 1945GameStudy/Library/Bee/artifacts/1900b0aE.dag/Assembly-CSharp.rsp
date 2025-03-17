@@ -435,7 +435,10 @@
 "Assets/Script/Monster.cs"
 "Assets/Script/PBullet.cs"
 "Assets/Script/Player.cs"
+"Assets/Script/Pool/ObjectPool.cs"
+"Assets/Script/Pool/PoolManager.cs"
 "Assets/Script/Spawn.cs"
+"Assets/Script/TMPColor.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -14,6 +14,21 @@ public class Spawn : MonoBehaviour
     bool swi = true;
     bool swi2 = true;
 
+
+    [SerializeField]
+    GameObject textBossWarning;
+
+
+    private void Awake()
+    {
+        textBossWarning.SetActive(false);
+
+        //PoolManager.Instance.CreatePool(monster, 10);
+
+    }
+
+
+
     void Start()
     {
         StartCoroutine("RandomSpawn");
@@ -33,6 +48,8 @@ public class Spawn : MonoBehaviour
             Vector2 r = new Vector2(x, transform.position.y);
             //몬스터 생성
             Instantiate(monster, r, Quaternion.identity);
+           // GameObject enemy =  PoolManager.Instance.Get(monster);
+           // enemy.transform.position = r;
         }
     }
     //코루틴으로 랜덤하게 생성하기
@@ -66,6 +83,7 @@ public class Spawn : MonoBehaviour
     {
         swi2 = false;
         StopCoroutine("RandomSpawn2");
+        textBossWarning.SetActive(true);
         //보스
         Vector3 pos = new Vector3(0, 2.97f, 0);
         Instantiate(Boss, pos, Quaternion.identity);

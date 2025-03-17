@@ -111,15 +111,16 @@ public class Player : MonoBehaviour
         if(collision.CompareTag("Item"))
         {
             power += 1;
-
             if (power >= 3)
                 power = 3;
-            else
-            {
-                //파워업
-                GameObject go = Instantiate(powerup, transform.position, Quaternion.identity);
-                Destroy(go, 1);
-            }
+
+
+             //파워업
+             GameObject go = Instantiate(powerup, transform.position, Quaternion.identity);
+            Destroy(go, 1);
+
+
+           
 
 
 

@@ -56,7 +56,8 @@ public class Monster : MonoBehaviour
         if(HP <=0)
         {
             ItemDrop();
-            Destroy(gameObject);
+             Destroy(gameObject);
+            //PoolManager.Instance.Return(gameObject);
         }
 
       
