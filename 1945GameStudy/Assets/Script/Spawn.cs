@@ -48,8 +48,8 @@ public class Spawn : MonoBehaviour
             Vector2 r = new Vector2(x, transform.position.y);
             //몬스터 생성
             Instantiate(monster, r, Quaternion.identity);
-           // GameObject enemy =  PoolManager.Instance.Get(monster);
-           // enemy.transform.position = r;
+            //GameObject enemy =  PoolManager.Instance.Get(monster);
+            //enemy.transform.position = r;
         }
     }
     //코루틴으로 랜덤하게 생성하기
